@@ -6,10 +6,23 @@ export default {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    container: {
+      center: true,
+      screens: {
+        "xl": "1142px",
+      }
+    },
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        "custom-black": "#070508",
+        "off-black": "#0F0D10",
+        "custom-grey": "#232224",
+        "custom-sky": "#71CED0",
+        "off-sky": "#71CED000",
+        "custom-white": "#FFFFFF3D"
+      },
+      fontSize: {
+        "custom-xl":"64px",
       },
     },
   },
