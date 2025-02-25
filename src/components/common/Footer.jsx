@@ -5,11 +5,11 @@ import Image from 'next/image'
 
 function Footer() {
     return (
-        <div>
+        <div className='bg-custom-black2 pt-[60px]'>
             <div className='px-4'>
                 <div className="container">
-                    <a href="/"><Image src="/assets/images/logo.webp"  width={150} height={44}/></a>
-                    <div className='flex gap-6'>
+                    <a href="/"><Image src="/assets/images/logo.webp" alt='logo'  width={150} height={44}/></a>
+                    <div className='flex flex-wrap gap-6 gap-y-2 mt-10'>
                         {FOOTER_LINKS.map((item, index) => (
                             <div key={index}>
                                 <a className='text-white font-semibold' href="">{item.title}</a>

@@ -8,8 +8,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="bg-custom-black">
+      <body data-new-gr-c-s-loaded="14.1223.0" data-new-gr-c-s-check-loaded="14.1223.0"  data-gr-ext-installed="" className="bg-custom-black">
         {children}
+
       </body>
     </html>
   );

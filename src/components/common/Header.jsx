@@ -24,7 +24,7 @@ const Header = () => {
     <div
       className="max-w-[1220px] backdrop-blur-[24] bg-[#FFFFFF1A] rounded-[60px] w-full mx-auto px-10 py-[18.5px] max-md:py-[5px]">
       <div className="flex justify-between items-center">
-        <Link className="ml-11" href="/">
+        <Link className="lg:ml-11" href="/">
           <Image className="pointer-events-none max-lg:w-[130px]" src="/assets/images/logo.webp" alt="logo" width={150} height={44} />
         </Link>
         <div

@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Heading({title, myClass}) {
+function Heading({title, myClass, spanTitle}) {
   return (
     <h2 className={`${myClass} text-white text-5xl`}>{title} <span className='text-custom-sky font-semibold'>{spanTitle}</span></h2>
   )
