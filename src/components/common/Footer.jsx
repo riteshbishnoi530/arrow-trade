@@ -23,11 +23,11 @@ function Footer() {
                             <Description myClass="!mt-[10px]" pera={item.discription} />
                         </div>
                     ))}
-                    <div className='flex gap-6 mt-[50px]'>
+                    <div className='flex gap-6 flex-wrap mt-[50px]'>
                         {ICON.map((item, index) => (
-                            <a href={item.link} key={index}>{item.icon}</a>
+                            <a className='media-icon' href={item.link} key={index}>{item.icon}</a>
                         ))}
-                    </div>
+                    </div> 
                 </div>
             </div>
             <div className='bg-white w-full h-[1px] bg-opacity-20 mt-20'></div>

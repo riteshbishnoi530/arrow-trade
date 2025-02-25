@@ -22,7 +22,7 @@ const Header = () => {
   }, [showSlide]);
   return (
     <div
-      className="max-w-[1220px] backdrop-blur-[24] bg-[#FFFFFF1A] rounded-[60px] w-full mx-auto px-10 py-[18.5px] max-md:py-[5px]">
+      className="max-w-[1220px] backdrop-blur-[24] bg-[#FFFFFF1A] rounded-[60px] w-full mx-auto px-10 max-md:px-4 py-[18.5px] max-md:py-[5px]">
       <div className="flex justify-between items-center">
         <Link className="lg:ml-11" href="/">
           <Image className="pointer-events-none max-lg:w-[130px]" src="/assets/images/logo.webp" alt="logo" width={150} height={44} />
@@ -43,23 +43,23 @@ const Header = () => {
           <CustomBtn text="Login"/>
         </div>
         </div>
-        <div onClick={() => setShowSlide(!showSlide)} className="z-[21] flex-col gap-2 max-sm:gap-[3px] lg:hidden flex cursor-pointer" >
+        <div onClick={() => setShowSlide(!showSlide)} className="z-[21] flex-col gap-1 lg:hidden flex cursor-pointer" >
           <span
             className={`${showSlide
-              ? "w-9 max-sm:w-4 max-sm:h-[3px] h-1 bg-white rotate-45 translate-y-5 max-sm:translate-y-2 duration-300 ease-linear rounded"
-              : "w-9 max-sm:w-4 max-sm:h-[3px] h-1 bg-white duration-300 ease-linear rounded"
+              ? "w-6 max-sm:w-4 max-sm:h-[3px] h-1 bg-white rotate-45 translate-y-5 max-sm:translate-y-2 duration-300 ease-linear rounded"
+              : "w-6 max-sm:w-4 max-sm:h-[3px] h-1 bg-white duration-300 ease-linear rounded"
               }`}
           ></span>
           <span
             className={`${showSlide
-              ? "w-9 max-sm:w-4 h-1 max-sm:h-[3px] bg-white opacity-0 duration-300 ease-linear"
-              : "w-9 max-sm:w-4 h-1 max-sm:h-[3px] bg-white rounded duration-300 ease-linear"
+              ? "w-6 max-sm:w-4 h-1 max-sm:h-[3px] bg-white opacity-0 duration-300 ease-linear"
+              : "w-6 max-sm:w-4 h-1 max-sm:h-[3px] bg-white rounded duration-300 ease-linear"
               }`}
           ></span>
           <span
             className={`${showSlide
-              ? "w-9 max-sm:w-4 h-1 max-sm:h-[3px] bg-white -rotate-45 -translate-y-1 duration-300 ease-linear rounded"
-              : "w-9 max-sm:w-4 h-1 max-sm:h-[3px] bg-white duration-300 ease-linear rounded"
+              ? "w-6 max-sm:w-4 h-1 max-sm:h-[3px] bg-white -rotate-45 -translate-y-1 duration-300 ease-linear rounded"
+              : "w-6 max-sm:w-4 h-1 max-sm:h-[3px] bg-white duration-300 ease-linear rounded"
               }`}
           ></span>
         </div>

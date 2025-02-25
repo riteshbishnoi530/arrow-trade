@@ -9,16 +9,13 @@ import Link from "next/link";
 const DetailsHero = () => {
   const { title } = useParams();
 
-  const blogArray = ARTICLES_CARD_LIST.filter(
-    (obj) =>
-      obj && obj.title && obj.title.toLowerCase().replace(/\s+/g, "-") === title
-  );
+  const blogArray = ARTICLES_CARD_LIST.filter((obj) =>  obj && obj.title && obj.title.toLowerCase().replace(/\s+/g, "-") === title );
 
   const newBlogs = blogArray.length ? blogArray[0] : null;
 
   return (
     <div className="pb-[271px] max-xl:pb-36 max-lg:pb-20 max-md:pb-16 max-sm:pb-10">
-      {newBlogs ? (
+      {/* {newBlogs ? ( */}
         <div className="max-w-[1440px] mx-auto relative">
           <Header />
           <div className="container mt-[91px] max-xl:pt-14 max-lg:pt-10 max-w-[1140px] mx-auto">
@@ -61,7 +58,7 @@ const DetailsHero = () => {
             />
           </div>
         </div>
-      ) : (
+      {/* ) : (
         <div className="flex flex-col items-center justify-center h-screen bg-black">
           <h1 className="text-9xl font-bold text-white">404</h1>
           <h2 className="text-4xl font-semibold text-white mt-4">
@@ -77,7 +74,7 @@ const DetailsHero = () => {
             Go Home
           </Link>
         </div>
-      )}
+      )} */}
     </div>
   );
 };

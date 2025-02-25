@@ -6,3 +6,9 @@
 *{
   font-family: "Inter", serif;
 }
+
+@media (max-width:640.98px) {
+  .media-icon svg{
+    width: 30px;
+  }
+}
