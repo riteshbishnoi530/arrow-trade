@@ -7,6 +7,18 @@
   font-family: "Inter", serif;
 }
 
+.bar-animation {
+  animation: top-bar 20s linear infinite forwards;
+}
+@keyframes top-bar {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
 @media (max-width:640.98px) {
   .media-icon svg{
     width: 30px;

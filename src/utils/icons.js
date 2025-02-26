@@ -4,6 +4,20 @@ export const Arrow = () => (
 </svg>
 );
 
+export const PrevArrow = () => (
+    <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="60" height="60" rx="30" transform="matrix(-1 0 0 1 60 0)" fill="#71CED0"/>
+<path d="M45 30.9999H15M15 30.9999L28.5 17.4999M15 30.9999L28.5 44.4999" stroke="#292929" strokeWidth="3"/>
+</svg>
+);
+
+export const NextArrow = () => (
+    <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="60" height="60" rx="30" fill="#71CED0"/>
+<path d="M15 30.9999H45M45 30.9999L31.5 17.4999M45 30.9999L31.5 44.4999" stroke="#292929" strokeWidth="3"/>
+</svg>
+);
+
 export const Search = () => (
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g opacity="0.8">

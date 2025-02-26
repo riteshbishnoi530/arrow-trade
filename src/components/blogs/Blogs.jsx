@@ -7,6 +7,8 @@ import Link from 'next/link'
 import { BLOG_CARD_LIST } from '@/utils/helper'
 import CustomBtn from '../common/CustomBtn'
 import { Arrow, Search } from '@/utils/icons'
+import NProgress from "nprogress";
+import "nprogress/nprogress.css";
 
 const BlogCards = () => {
     const [open, setOpen] = useState(3);
@@ -25,6 +27,7 @@ const BlogCards = () => {
     );
 
     const handleShowMore = () => {
+        NProgress.start()
         const nextPage = open < BLOG_CARD_LIST.length ? open / 3 + 1 : 1;
         setOpen(nextPage * 3);
         window.history.pushState(null, "", `?blog/page=${nextPage}`);
